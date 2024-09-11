@@ -1,0 +1,53 @@
+.hero-section {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px 20px;
+  color: white;
+}
+
+.container {
+  max-width: 960px;
+}
+.hero-section {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  color: white;
+  padding: 50px 20px;
+}
+
+.marquee {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scroll 15s linear infinite; /* Animate marquee scrolling */
+}
+
+.marquee img {
+  height: 100%;
+  margin-right: 20px;
+}
+
+.hero-text {
+  z-index: 1;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  margin-bottom: 30px;
+}
